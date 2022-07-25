@@ -1,0 +1,36 @@
+header {
+    height: 5.5rem;
+    width: 100%;
+    box-shadow: 0px 4px 32px -12px rgba(227, 73, 129, 0.5);
+}
+
+header > div{
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.button__start{
+    height: 2.5rem;
+    width: 4rem;
+    background-color: var(--color-pink);
+    color: var(--color-white);
+    font-size: 0.875rem;
+    border-radius: 0.5rem;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: 444ms;
+}
+
+.button__start:hover{
+    background-color: var(--color-grey-2);
+    border-color: var(--color-pink);
+    color: var(--color-pink);
+}
+
+.title-home{
+    color: var(--color-grey-4);
+}

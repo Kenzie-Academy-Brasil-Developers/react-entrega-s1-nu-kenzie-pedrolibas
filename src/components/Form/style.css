@@ -1,0 +1,124 @@
+.form{
+    width: 22.688rem;
+    max-width: 100%;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    border: 2px solid var(--color-grey-2);
+}
+
+form{
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 4px;  
+}
+
+label{
+    font-weight: 400;
+    font-size: 0.75rem;
+    color: var(--color-black);
+    margin: 1.5rem 0 1.5rem 0;
+}
+
+.value{
+    display: flex;
+    flex-direction: column;
+}
+
+input{
+    width: 15rem;
+    max-width: 100%;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    outline: 0;
+    background-color: var(--color-white);
+}
+
+input::placeholder{
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: var(--color-grey-3);
+}
+
+#number{
+    width: 4rem;
+    max-width: 100%;
+    border-radius: 0.5rem 0 0 0.5rem;
+    color: var(--color-grey-3);
+}
+
+.number{
+    background-color: var(--color-white);
+    height: 31px;
+    padding: 0.25rem 0.5rem 0.29rem 0;
+    border-radius: 0 0.5rem 0.5rem 0;
+    font-weight: 400;
+    color: var(--color-grey-3);
+}
+
+.values{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 0.5rem;
+}
+
+.type__value{
+    display: flex;
+    flex-direction: column;
+}
+
+select{
+    height: 31px;
+    width: 9.3rem;
+    max-width: 100%;
+    border: none;
+    border-radius: 0.5rem;
+    color: var(--color-grey-3);
+    font-size: 0.75rem;
+    font-weight: 400;
+    outline: 0;
+}
+
+option{
+    font-weight: 400;
+    font-size: 0.75rem;
+    color: var(--color-grey-3);
+}
+
+.button__value{
+    background-color: var(--color-pink);
+    border: 2px solid transparent;
+    border-radius: 0.5rem;
+    height: 3rem;
+    width: 85%;
+    max-width: 100%;
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--color-white);
+    margin: 1.5rem auto;
+    cursor: pointer;
+    transition: 444ms;
+}
+
+.button__value:hover{
+    border-color: var(--color-pink);
+    background-color: var(--color-grey-1);
+    color: var(--color-pink);
+}
+
+@media (max-width: 940px){
+    .form{
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 380px){
+    .form{
+        margin: 0 auto;
+        width: 100%;
+    }
+}

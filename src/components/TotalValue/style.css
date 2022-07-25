@@ -1,0 +1,37 @@
+.title-value {
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--color-grey-4);
+}
+
+.p-value {
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--color-pink);
+}
+
+.span-value {
+    font-weight: 400;
+    font-size: 0.75rem;
+    color: var(--color-grey-3);
+}
+
+.general-value {
+    width: 22.688rem;
+    max-width: 90%;
+    margin-top: 4.625rem;
+}
+
+.conteiner-value {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+@media (max-width: 400px) {
+    .general-value {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
