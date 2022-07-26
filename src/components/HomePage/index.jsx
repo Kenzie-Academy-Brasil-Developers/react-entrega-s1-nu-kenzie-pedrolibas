@@ -15,7 +15,7 @@ const HomePage = ({ setIndexPage }) => {
       <div className="container">
         <div className="infos">
           <Form setArr={setArrCard} setNewArr={setNewArr} />
-          {arrCard.length > 0 && <TotalValue arr={arrCard} />}
+          {newArr.length > 0 && <TotalValue arr={newArr} />}
         </div>
         <List arr={arrCard} setArr={setArrCard} newArr={newArr} setNewArr={setNewArr}/>
       </div>

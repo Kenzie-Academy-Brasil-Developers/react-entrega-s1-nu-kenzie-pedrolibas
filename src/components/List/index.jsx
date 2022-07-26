@@ -34,7 +34,7 @@ const List = ({ arr, setArr, newArr, setNewArr }) => {
 
   return (
     <ul>
-      {arr.length > 0 ? (
+      {newArr.length > 0 ? (
         <>
           <div className="resume">
             <h2>Resumo financeiro</h2>
