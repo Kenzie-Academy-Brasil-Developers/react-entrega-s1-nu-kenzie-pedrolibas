@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./style.css";
+import toast from "react-hot-toast"
 
 const Form = ({ setArr, setNewArr }) => {
   const [all, setAll] = useState({ type: "Entrada" });
@@ -13,6 +14,17 @@ const Form = ({ setArr, setNewArr }) => {
     ) {
       setArr((old) => [...old, all]);
       setNewArr((old) => [...old, all]);
+      toast.success("Lançamento realizado com sucesso", {
+        style: {
+          color: "var(--color-pink)"
+        }
+      })
+    } else {
+      toast.error("Por favor preencha todos os campos!", {
+        style: {
+          color: "var(--color-pink)"
+        }
+      })
     }
   }
 
@@ -34,7 +46,7 @@ const Form = ({ setArr, setNewArr }) => {
                 id="number"
                 onChange={(e) => setAll({ ...all, value: e.target.value })}
               />
-              <span className="number">R$</span>
+              <p className="number">R$</p>
             </div>
           </div>
           <div className="type__value">

@@ -1,0 +1,52 @@
+.card {
+    width: 35.125rem;
+    height: 5.438rem;
+    max-width: 100%;
+    margin-bottom: 10px;
+    background-color: var(--color-grey-1);
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.title-card {
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--color-grey-4);
+}
+
+.value-card {
+    font-weight: 400;
+    font-size: 0.75rem;
+    color: var(--color-grey-4);
+}
+
+.type-card {
+    font-weight: 400;
+    font-size: 0.75rem;
+    color: var(--color-grey-3);
+}
+
+.remove-card {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    transition: 444ms;
+}
+
+.remove-card:hover {
+    color: var(--color-pink);
+}
+
+.type-span {
+    width: 80%;
+}
+
+.info-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+}

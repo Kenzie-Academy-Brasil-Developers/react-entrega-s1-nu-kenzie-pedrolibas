@@ -28,7 +28,8 @@ label{
 }
 
 input{
-    width: 15rem;
+    width: 19rem;
+    height: 2rem;
     max-width: 100%;
     padding: 0.5rem;
     border: none;
@@ -44,7 +45,7 @@ input::placeholder{
 }
 
 #number{
-    width: 4rem;
+    width: 6rem;
     max-width: 100%;
     border-radius: 0.5rem 0 0 0.5rem;
     color: var(--color-grey-3);
@@ -52,7 +53,9 @@ input::placeholder{
 
 .number{
     background-color: var(--color-grey-2);
-    height: 31px;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
     padding: 0.25rem 0.5rem 0.29rem 0;
     border-radius: 0 0.5rem 0.5rem 0;
     font-weight: 400;
@@ -62,6 +65,7 @@ input::placeholder{
 .values{
     display: flex;
     align-items: center;
+    justify-content: space-between;
     width: 100%;
     gap: 0.5rem;
 }
@@ -72,7 +76,7 @@ input::placeholder{
 }
 
 select{
-    height: 31px;
+    height: 3rem;
     width: 9.3rem;
     max-width: 100%;
     border: none;
@@ -82,6 +86,11 @@ select{
     font-size: 0.75rem;
     font-weight: 400;
     outline: 0;
+}
+
+.value__info{
+    display: flex;
+    align-items: center;
 }
 
 option{
@@ -121,5 +130,17 @@ option{
     .form{
         margin: 0 auto;
         width: 100%;
+    }
+
+    input{
+        width: 14rem;
+    }
+
+    #number{
+        width: 3rem;
+    }
+
+    select{
+        width: 8.5rem;
     }
 }

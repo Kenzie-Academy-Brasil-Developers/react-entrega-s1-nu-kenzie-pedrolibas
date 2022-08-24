@@ -1,0 +1,41 @@
+.filter {
+    padding: 10px 15px;
+    border: 2px solid transparent;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    font-size: 0.875rem;
+    cursor: pointer;
+    transition: 500ms;
+    margin: 0 10px 0 10px;
+}
+
+.filter+.filter+.filter {
+    margin-right: 0;
+}
+
+
+.filter:hover {
+    opacity: 0.8;
+}
+
+.resume h2 {
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--color-grey-4);
+}
+
+.resume {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 35.125rem;
+    max-width: 100%;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 940px) {
+    .buttons-filter {
+        display: flex;
+        overflow-x: scroll;
+    }
+}

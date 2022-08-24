@@ -1,8 +1,8 @@
 .container{
     display: flex;
-    width: 100%;
+    width: 85%;
     justify-content: space-around;
-    margin-top: 1.875rem;
+    margin: 1.875rem auto;
 }
 
 .infos{
